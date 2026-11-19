@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="teaBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#EBE3D5"/>
+    </radialGradient>
+    <linearGradient id="teaLiquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E69550"/>
+      <stop offset="30%" stop-color="#C86A28"/>
+      <stop offset="100%" stop-color="#8F3E0B"/>
+    </linearGradient>
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+      <stop offset="20%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="80%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="drinkShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1B4D3E" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="450" fill="url(#teaBg)"/>
+
+  <!-- Glass Coaster -->
+  <ellipse cx="300" cy="380" rx="140" ry="25" fill="#D5C5B0" opacity="0.5" filter="url(#drinkShadow)"/>
+  <ellipse cx="300" cy="378" rx="120" ry="18" fill="#1B4D3E" opacity="0.8"/>
+  <ellipse cx="300" cy="376" rx="112" ry="15" fill="#D99B26" stroke="#FAF8F5" stroke-width="2"/>
+
+  <!-- Tall Glass Body -->
+  <g filter="url(#drinkShadow)">
+    <!-- Liquid content -->
+    <path d="M228 140 L242 355 C242 368, 358 368, 358 355 L372 140 Z" fill="url(#teaLiquid)"/>
+
+    <!-- Ice cubes inside -->
+    <rect x="255" y="200" width="38" height="38" rx="7" fill="#FFFFFF" opacity="0.25" transform="rotate(15 255 200)"/>
+    <rect x="305" y="230" width="40" height="40" rx="8" fill="#FFFFFF" opacity="0.22" transform="rotate(-12 305 230)"/>
+    <rect x="265" y="275" width="42" height="42" rx="8" fill="#FFFFFF" opacity="0.2" transform="rotate(22 265 275)"/>
+
+    <!-- Thick Frothy Foam Layer on Top (Busa Teh Tarik) -->
+    <path d="M225 140 C220 115, 380 115, 375 140 C370 152, 230 152, 225 140 Z" fill="#F8E5CE"/>
+    <!-- Foam bubbles -->
+    <ellipse cx="250" cy="128" rx="20" ry="14" fill="#FFF2E2"/>
+    <ellipse cx="280" cy="122" rx="24" ry="16" fill="#FDF6ED"/>
+    <ellipse cx="315" cy="120" rx="26" ry="17" fill="#FFF2E2"/>
+    <ellipse cx="350" cy="126" rx="22" ry="15" fill="#FCE9D6"/>
+    <circle cx="270" cy="138" r="5" fill="#E8C9A7" opacity="0.6"/>
+    <circle cx="300" cy="134" r="6" fill="#E8C9A7" opacity="0.6"/>
+    <circle cx="330" cy="136" r="4.5" fill="#E8C9A7" opacity="0.6"/>
+    <circle cx="285" cy="142" r="3" fill="#E8C9A7" opacity="0.6"/>
+
+    <!-- Transparent Glass Contour -->
+    <path d="M220 120 L238 360 C240 375, 360 375, 362 360 L380 120 C380 108, 220 108, 220 120 Z" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.7"/>
+    <path d="M220 120 L238 360 C240 375, 360 375, 362 360 L380 120 Z" fill="url(#glassReflection)"/>
+
+    <!-- Glass Rim Highlight -->
+    <ellipse cx="300" cy="116" rx="80" ry="12" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.8"/>
+  </g>
+
+  <!-- Striped Drinking Straw -->
+  <g>
+    <path d="M335 80 L350 40 L340 35 L320 80" fill="#D99B26"/>
+    <path d="M335 80 L300 240" stroke="#D99B26" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+    <!-- Spiral stripe -->
+    <path d="M330 90 L335 98 M325 110 L330 118 M320 130 L325 138" stroke="#FAF8F5" stroke-width="3"/>
+  </g>
+
+  <!-- Condensed Milk Swirl Effect in glass -->
+  <path d="M255 350 Q300 335 345 352" stroke="#FFF7ED" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Badge -->
+  <rect x="25" y="25" width="160" height="34" rx="17" fill="#1B4D3E"/>
+  <text x="105" y="47" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#FAF8F5" letter-spacing="1">
+    ★ OTENTIK KOPITIAM
+  </text>
+</svg>

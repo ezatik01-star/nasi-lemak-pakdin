@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#EFE8DE"/>
+    </radialGradient>
+    <filter id="plateShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#1B4D3E" flood-opacity="0.18"/>
+    </filter>
+    <filter id="foodShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="450" fill="url(#bgGlow)"/>
+
+  <!-- Modern Plate -->
+  <ellipse cx="300" cy="245" rx="230" ry="160" fill="#E8DEC8" opacity="0.4" filter="url(#plateShadow)"/>
+  <ellipse cx="300" cy="240" rx="220" ry="150" fill="#FAF8F5"/>
+  <ellipse cx="300" cy="240" rx="205" ry="138" fill="#F4EFE6" stroke="#D99B26" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Banana Leaf Lining -->
+  <path d="M140 230 C160 140, 420 130, 470 230 C430 320, 160 320, 140 230 Z" fill="#2E7D32" filter="url(#foodShadow)"/>
+  <!-- Leaf Veins -->
+  <path d="M150 230 Q300 225 460 230" stroke="#43A047" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M220 180 L250 227 M300 170 L310 226 M380 180 L360 228 M240 280 L260 230 M330 285 L320 230 M400 275 L380 230" stroke="#43A047" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.4"/>
+
+  <!-- Fragrant Coconut Rice Cone (Nasi Lemak) -->
+  <path d="M300 140 L370 245 C365 258, 235 258, 230 245 Z" fill="#FFFFFF" filter="url(#foodShadow)"/>
+  <ellipse cx="300" cy="245" rx="70" ry="15" fill="#F1ECE1"/>
+  <!-- Rice texture dots -->
+  <circle cx="280" cy="200" r="1.5" fill="#E0D7C6"/>
+  <circle cx="310" cy="210" r="1.5" fill="#E0D7C6"/>
+  <circle cx="295" cy="180" r="1.5" fill="#E0D7C6"/>
+  <circle cx="320" cy="235" r="1.5" fill="#E0D7C6"/>
+  <circle cx="270" cy="225" r="1.5" fill="#E0D7C6"/>
+
+  <!-- Pandan Leaf Knot Garnish on Rice -->
+  <path d="M295 135 Q300 120 305 135 Q315 140 305 148 Q290 145 295 135 Z" fill="#388E3C"/>
+
+  <!-- Hard Boiled Egg (Halved) - Left Side -->
+  <g filter="url(#foodShadow)">
+    <ellipse cx="230" cy="250" rx="30" ry="38" fill="#FFFFFF" transform="rotate(-25 230 250)"/>
+    <ellipse cx="230" cy="252" rx="20" ry="24" fill="#FFA000" transform="rotate(-25 230 250)"/>
+    <ellipse cx="232" cy="254" rx="13" ry="15" fill="#FFC107" transform="rotate(-25 230 250)"/>
+    <ellipse cx="228" cy="248" rx="4" ry="5" fill="#FFD54F" opacity="0.7"/>
+  </g>
+
+  <!-- Hard Boiled Egg Second Half - Tilted -->
+  <g filter="url(#foodShadow)" opacity="0.95">
+    <ellipse cx="190" cy="225" rx="25" ry="32" fill="#FFFFFF" transform="rotate(35 190 225)"/>
+    <ellipse cx="188" cy="223" rx="16" ry="19" fill="#FFA000" transform="rotate(35 190 225)"/>
+    <circle cx="186" cy="220" r="10" fill="#FFC107"/>
+  </g>
+
+  <!-- Sambal Bilis Tumis (Pak Din Signature) - Rich Red -->
+  <g filter="url(#foodShadow)">
+    <path d="M350 230 C380 215, 415 235, 400 265 C380 285, 345 270, 350 230 Z" fill="#B71C1C"/>
+    <path d="M360 235 C380 225, 400 240, 395 260 C380 270, 355 260, 360 235 Z" fill="#D32F2F"/>
+    <circle cx="375" cy="245" r="4" fill="#FF5252" opacity="0.6"/>
+    <!-- Red oil sheen -->
+    <path d="M345 260 C355 280, 390 285, 405 265" stroke="#E53935" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
+    <!-- Chili seeds -->
+    <circle cx="365" cy="250" r="1.5" fill="#FFF9C4"/>
+    <circle cx="385" cy="242" r="1.5" fill="#FFF9C4"/>
+    <circle cx="378" cy="262" r="1.5" fill="#FFF9C4"/>
+  </g>
+
+  <!-- Crispy Fried Anchovies (Ikan Bilis) -->
+  <g fill="#A1887F" stroke="#5D4037" stroke-width="0.8">
+    <path d="M325 270 Q335 267 345 272 Q335 275 325 270 Z"/>
+    <path d="M335 278 Q345 274 358 277 Q345 282 335 278 Z"/>
+    <path d="M315 275 Q325 273 333 277 Q323 280 315 275 Z"/>
+    <path d="M342 265 Q352 263 360 268 Q350 271 342 265 Z"/>
+  </g>
+
+  <!-- Crunchy Roasted Peanuts -->
+  <g fill="#8D6E63">
+    <ellipse cx="265" cy="275" rx="8" ry="4.5" transform="rotate(20 265 275)"/>
+    <ellipse cx="280" cy="280" rx="9" ry="5" transform="rotate(-15 280 280)"/>
+    <ellipse cx="295" cy="276" rx="8" ry="4.5" transform="rotate(40 295 276)"/>
+    <ellipse cx="255" cy="270" rx="7" ry="4" transform="rotate(-30 255 270)"/>
+    <ellipse cx="272" cy="285" rx="8" ry="4.8" transform="rotate(10 272 285)"/>
+  </g>
+
+  <!-- Fresh Cucumber Slices (Timun) -->
+  <g filter="url(#foodShadow)">
+    <g transform="translate(195, 275)">
+      <circle cx="0" cy="0" r="22" fill="#388E3C"/>
+      <circle cx="0" cy="0" r="17" fill="#C8E6C9"/>
+      <circle cx="0" cy="0" r="10" fill="#E8F5E9"/>
+      <circle cx="-3" cy="-2" r="1" fill="#81C784"/>
+      <circle cx="3" cy="2" r="1" fill="#81C784"/>
+      <circle cx="2" cy="-4" r="1" fill="#81C784"/>
+    </g>
+    <g transform="translate(230, 290)">
+      <circle cx="0" cy="0" r="22" fill="#2E7D32"/>
+      <circle cx="0" cy="0" r="17" fill="#C8E6C9"/>
+      <circle cx="0" cy="0" r="10" fill="#E8F5E9"/>
+    </g>
+  </g>
+
+  <!-- Top Badge Overlay -->
+  <rect x="25" y="25" width="170" height="34" rx="17" fill="#1B4D3E"/>
+  <text x="110" y="47" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#FAF8F5" letter-spacing="1">
+    ★ CLASSIC CHOICE
+  </text>
+</svg>

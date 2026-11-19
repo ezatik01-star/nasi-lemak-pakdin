@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlowChicken" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#EFE6D8"/>
+    </radialGradient>
+    <linearGradient id="chickenSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="40%" stop-color="#B45309"/>
+      <stop offset="80%" stop-color="#78350F"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <filter id="chickenShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="8" stdDeviation="10" flood-color="#1B4D3E" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="450" fill="url(#bgGlowChicken)"/>
+
+  <!-- Plate -->
+  <ellipse cx="300" cy="245" rx="230" ry="160" fill="#E8DEC8" opacity="0.4" filter="url(#chickenShadow)"/>
+  <ellipse cx="300" cy="240" rx="220" ry="150" fill="#FAF8F5"/>
+  <ellipse cx="300" cy="240" rx="205" ry="138" fill="#F4EFE6" stroke="#D99B26" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Banana Leaf -->
+  <path d="M135 230 C155 135, 425 125, 475 230 C435 325, 155 325, 135 230 Z" fill="#2E7D32"/>
+  <path d="M145 230 Q300 225 465 230" stroke="#43A047" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- Rice Cone -->
+  <path d="M250 145 L320 250 C315 262, 185 262, 180 250 Z" fill="#FFFFFF"/>
+  <ellipse cx="250" cy="250" rx="70" ry="15" fill="#F1ECE1"/>
+  <!-- Pandan Leaf garnish -->
+  <path d="M245 140 Q250 125 255 140 Q265 145 255 153 Q240 150 245 140 Z" fill="#388E3C"/>
+
+  <!-- Golden Crispy Spiced Fried Chicken (Ayam Goreng Berempah) -->
+  <g filter="url(#chickenShadow)">
+    <!-- Bone tip -->
+    <ellipse cx="440" cy="180" rx="14" ry="10" fill="#FAF8F5" transform="rotate(-35 440 180)"/>
+    <rect x="420" y="180" width="22" height="35" rx="5" fill="#E5E7EB" transform="rotate(-35 420 180)"/>
+    <!-- Crispy juicy thigh & drumstick body -->
+    <path d="M330 200 C370 170, 420 190, 430 225 C440 260, 395 295, 345 285 C310 275, 300 230, 330 200 Z" fill="url(#chickenSkin)"/>
+    <!-- Spiced crispy flakes (serundeng lengkuas rempah) -->
+    <path d="M340 215 C370 200, 400 215, 390 245 C380 260, 345 255, 340 215 Z" fill="#92400E" opacity="0.8"/>
+    <!-- Crispy spice crumbles -->
+    <circle cx="365" cy="225" r="3.5" fill="#F59E0B"/>
+    <circle cx="380" cy="245" r="4" fill="#FBBF24"/>
+    <circle cx="345" cy="240" r="3" fill="#D97706"/>
+    <circle cx="395" cy="230" r="3" fill="#F59E0B"/>
+    <circle cx="355" cy="260" r="3.5" fill="#B45309"/>
+    <circle cx="375" cy="265" r="2.5" fill="#FCD34D"/>
+    <!-- Glistening oil highlight -->
+    <path d="M350 210 Q380 205 405 225" stroke="#FDE68A" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Hard Boiled Egg -->
+  <g filter="url(#chickenShadow)">
+    <ellipse cx="185" cy="255" rx="26" ry="34" fill="#FFFFFF" transform="rotate(-20 185 255)"/>
+    <ellipse cx="185" cy="257" rx="17" ry="22" fill="#FFA000" transform="rotate(-20 185 255)"/>
+    <ellipse cx="187" cy="259" rx="11" ry="14" fill="#FFC107" transform="rotate(-20 185 255)"/>
+  </g>
+
+  <!-- Signature Sambal Bilis -->
+  <g filter="url(#chickenShadow)">
+    <path d="M250 260 C275 250, 305 260, 295 285 C280 300, 245 290, 250 260 Z" fill="#B71C1C"/>
+    <path d="M258 265 C275 258, 292 268, 288 282 C275 290, 255 282, 258 265 Z" fill="#D32F2F"/>
+    <circle cx="270" cy="272" r="3" fill="#FF5252" opacity="0.7"/>
+    <circle cx="265" cy="278" r="1.5" fill="#FFF9C4"/>
+    <circle cx="280" cy="275" r="1.5" fill="#FFF9C4"/>
+  </g>
+
+  <!-- Cucumber Slices -->
+  <g transform="translate(150, 275)" filter="url(#chickenShadow)">
+    <circle cx="0" cy="0" r="20" fill="#2E7D32"/>
+    <circle cx="0" cy="0" r="15" fill="#C8E6C9"/>
+    <circle cx="0" cy="0" r="9" fill="#E8F5E9"/>
+  </g>
+  <g transform="translate(178, 295)" filter="url(#chickenShadow)">
+    <circle cx="0" cy="0" r="20" fill="#388E3C"/>
+    <circle cx="0" cy="0" r="15" fill="#C8E6C9"/>
+    <circle cx="0" cy="0" r="9" fill="#E8F5E9"/>
+  </g>
+
+  <!-- Peanuts & Bilis -->
+  <g fill="#8D6E63">
+    <ellipse cx="215" cy="285" rx="8" ry="4.5" transform="rotate(25 215 285)"/>
+    <ellipse cx="230" cy="290" rx="8" ry="4.5" transform="rotate(-15 230 290)"/>
+    <ellipse cx="305" cy="290" rx="8" ry="4.5" transform="rotate(35 305 290)"/>
+    <ellipse cx="320" cy="285" rx="8" ry="4.5" transform="rotate(-20 320 285)"/>
+  </g>
+
+  <!-- Top Badge Ribbon: BEST SELLER -->
+  <rect x="25" y="25" width="160" height="34" rx="17" fill="#D99B26"/>
+  <text x="105" y="47" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="800" fill="#1B4D3E" letter-spacing="1">
+    ★ BEST SELLER
+  </text>
+</svg>

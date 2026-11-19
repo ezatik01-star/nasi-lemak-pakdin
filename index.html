@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Nasi Lemak Pak Din | Nasi Lemak Number 1 Jakarta - Lobby K-Link Tower</title>
+  
+  <!-- Meta SEO & Social Sharing -->
+  <meta name="description" content="Nasi Lemak Pak Din - Nasi Lemak Number 1 Jakarta. Cita rasa otentik gurih pandan & sambal bilis khas di L Floor (Lobby) K-Link Tower, Jl. Gatot Subroto Jakarta Selatan. Pesan online via WhatsApp, GoFood & GrabFood!" />
+  <meta name="keywords" content="Nasi Lemak Pak Din, Nasi Lemak Jakarta, K-Link Tower Nasi Lemak, Kuliner Gatot Subroto, Teh Tarik Jakarta, Nasi Lemak Ayam Goreng" />
+  <meta property="og:title" content="Nasi Lemak Pak Din | Nasi Lemak Number 1 Jakarta" />
+  <meta property="og:description" content="Nikmati sarapan dan makan siang lezat di Lobby K-Link Tower. Gunakan kode promo KLINK10 untuk diskon 10%!" />
+  <meta property="og:image" content="assets/img/logo.svg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1B4D3E" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="home">
+
+  <!-- =========================================================================
+       1. NAVBAR
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg sticky-top custom-navbar" id="mainNavbar">
+    <div class="container">
+      <!-- Brand Logo & Name -->
+      <a class="navbar-brand-wrapper" href="#home">
+        <img src="assets/img/logo.svg" alt="Logo Nasi Lemak Pak Din" class="navbar-brand-logo" />
+        <div class="d-flex flex-column">
+          <span class="brand-text-name">Nasi Lemak Pak Din</span>
+          <span class="brand-text-sub">Number 1 Jakarta</span>
+        </div>
+      </a>
+
+      <!-- Right Action Items (Mobile Cart + Hamburger) -->
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <!-- Cart Drawer Trigger Button -->
+        <button 
+          class="btn-nav-cart" 
+          type="button" 
+          data-bs-toggle="offcanvas" 
+          data-bs-target="#cartOffcanvas" 
+          aria-controls="cartOffcanvas"
+          aria-label="Buka Keranjang Belanja"
+        >
+          <i class="bi bi-bag-check-fill text-gold fs-5"></i>
+          <span class="d-none d-sm-inline">Keranjang</span>
+          <span class="cart-badge cart-count-badge">0</span>
+        </button>
+
+        <!-- Navbar Hamburger Toggler -->
+        <button 
+          class="navbar-toggler border-0 shadow-none p-1" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-2 text-primary-pakdin"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse order-lg-2 justify-content-end me-lg-3" id="navbarNav">
+        <ul class="navbar-nav gap-1 py-2 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="#home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#tentang">Tentang & Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#lokasi">Lokasi</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <!-- Hero Copywriting -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <div class="hero-pill-badge">
+            <i class="bi bi-award-fill text-gold"></i>
+            <span>Authentic Malay Recipe • Jakarta</span>
+          </div>
+          
+          <h1 class="hero-title font-heading">
+            Cita Rasa Gurih Legendaris <br />
+            <span class="hero-tagline-highlight">"Nasi Lemak Number 1 Jakarta"</span>
+          </h1>
+
+          <p class="hero-lead">
+            Aroma pulen daun pandan dan santan segar berpadu dengan sambal bilis pedas manis khas Pak Din. Siap menyemangati sarapan dan makan siang Anda di K-Link Tower!
+          </p>
+
+          <!-- Quick Metadata Badges -->
+          <div class="hero-meta-list text-start d-inline-block d-lg-flex flex-column">
+            <div class="hero-meta-item">
+              <span class="hero-meta-icon"><i class="bi bi-geo-alt-fill"></i></span>
+              <span><strong>Lokasi:</strong> L Floor (Lobby), K-Link Tower, Jl. Gatot Subroto, Jakarta Selatan</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-icon"><i class="bi bi-clock-fill"></i></span>
+              <span><strong>Jam Buka:</strong> Senin – Jumat, 08.00 – 19.00 WIB (Weekend Tutup)</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-icon"><i class="bi bi-tag-fill text-gold"></i></span>
+              <span><strong>Promo Karyawan/Mahasiswa:</strong> Gunakan kode <strong>KLINK10</strong> diskon 10%</span>
+            </div>
+          </div>
+
+          <!-- Hero CTAs -->
+          <div class="hero-cta-group justify-content-center justify-content-lg-start mt-3">
+            <a href="#menu" class="btn-pakdin-primary">
+              <i class="bi bi-book-half"></i>
+              <span>Lihat Menu & Pesan</span>
+            </a>
+            <a 
+              href="https://wa.me/6281234567890?text=Halo%20Pak%20Din,%20saya%20mau%20tanya%20menu%20dan%20pesan%20Nasi%20Lemak" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-pakdin-gold"
+            >
+              <i class="bi bi-whatsapp"></i>
+              <span>Pesan via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Featured Card Graphic -->
+        <div class="col-lg-5">
+          <div class="hero-card-featured mx-auto" style="max-width: 440px;">
+            <div class="hero-card-img-wrap">
+              <img 
+                src="assets/img/nasi-lemak-chicken.svg" 
+                alt="Nasi Lemak Chicken and Egg Pak Din" 
+                class="img-fluid" 
+              />
+              <span class="floating-taste-badge">
+                <i class="bi bi-star-fill text-gold"></i> 4.9/5 • Favorit Gedung
+              </span>
+            </div>
+            <div class="pt-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <h4 class="font-heading mb-0 fs-5">Nasi Lemak + Chicken + Egg</h4>
+                <span class="text-primary-pakdin fw-bold fs-5">Rp 38.000</span>
+              </div>
+              <p class="text-muted small mb-3">Ayam goreng rempah renyah, telur rebus, sambal bilis pedas gurih & kacang garing.</p>
+              <div class="d-flex gap-2">
+                <button 
+                  class="btn btn-pakdin-primary w-100 btn-sm btn-add-cart" 
+                  data-id="nl-chicken-egg"
+                >
+                  <i class="bi bi-plus-circle me-1"></i> Tambah ke Keranjang
+                </button>
+              </div>
+            </div>
+            <div class="hero-floating-promo d-none d-sm-inline-flex">
+              <i class="bi bi-percent fs-6"></i> Kode: KLINK10 untuk diskon 10%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. KEUNGGULAN / VALUE PROPOSITION
+       ========================================================================= -->
+  <section class="py-4 bg-white border-top border-bottom border-light">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="bi bi-fire"></i>
+            </div>
+            <h4 class="feature-title">Pandan Santan Asli</h4>
+            <p class="feature-desc">Beras pulen dimasak rempah pandan & santan kental segar setiap pagi.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="bi bi-gem"></i>
+            </div>
+            <h4 class="feature-title">Sambal Bilis Juara</h4>
+            <p class="feature-desc">Resep sambal tumis otentik, pedas mantap dengan paduan manis gurih.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="bi bi-building"></i>
+            </div>
+            <h4 class="feature-title">Lobby K-Link Tower</h4>
+            <p class="feature-desc">Akses super mudah di Lantai L untuk sarapan cepat maupun makan siang santai.</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="feature-box">
+            <div class="feature-icon-circle">
+              <i class="bi bi-bicycle"></i>
+            </div>
+            <h4 class="feature-title">Dine-in & Delivery</h4>
+            <p class="feature-desc">Makan di tempat, takeaway ke lantai kantor, atau pesan via WhatsApp/Ojol.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. MENU CATALOG + SEARCH & FILTER
+       ========================================================================= -->
+  <section class="py-5" id="menu">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-subtitle">Pilihan Rasa Otentik</span>
+        <h2 class="section-title font-heading">Menu Favorit Pak Din</h2>
+        <p class="section-desc">
+          Dibuat hangat setiap hari dari bahan bermutu tinggi dengan harga terjangkau bagi para profesional dan mahasiswa di K-Link Tower.
+        </p>
+      </div>
+
+      <!-- Search & Category Filter Toolbar -->
+      <div class="search-filter-wrapper mb-4">
+        <div class="row g-3 align-items-center">
+          <!-- Real-time Search Input -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="search-input-group">
+              <i class="bi bi-search search-icon"></i>
+              <input 
+                type="text" 
+                class="form-control search-input" 
+                id="searchInput" 
+                placeholder="Cari menu (misal: Ayam, Teh Tarik, Telur)..."
+                aria-label="Cari menu"
+                autocomplete="off"
+              />
+              <button class="search-clear-btn" id="searchClearBtn" type="button" aria-label="Hapus pencarian">
+                <i class="bi bi-x-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="col-12 col-md-6 col-lg-7">
+            <div class="filter-pills-container justify-content-md-end">
+              <button class="filter-pill active" data-category="all">
+                <i class="bi bi-grid-fill"></i> Semua Menu
+              </button>
+              <button class="filter-pill" data-category="makanan">
+                <i class="bi bi-egg-fried"></i> Makanan
+              </button>
+              <button class="filter-pill" data-category="minuman">
+                <i class="bi bi-cup-hot-fill"></i> Minuman
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Items Dynamic Grid -->
+      <div class="row g-4" id="menuContainer">
+        <!-- Rendered dynamically by js/app.js from js/data.js -->
+        <div class="col-12 text-center py-5">
+          <div class="spinner-border text-primary-pakdin" role="status">
+            <span class="visually-hidden">Memuat menu...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. ABOUT & BRAND STORY + PROMO BANNER (KLINK10)
+       ========================================================================= -->
+  <section class="about-section" id="tentang">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <!-- Brand Story Column -->
+        <div class="col-lg-6">
+          <span class="section-subtitle">Kisah & Dedikasi UMKM</span>
+          <h2 class="section-title font-heading mb-3">
+            Dari Resep Tradisi <br />
+            Untuk Warga K-Link Tower
+          </h2>
+          <p class="text-muted mb-3">
+            <strong>Nasi Lemak Pak Din</strong> berawal dari semangat menghadirkan nasi lemak khas Melayu yang benar-benar otentik di tengah hiruk-pikuk pusat bisnis Gatot Subroto Jakarta. Kami percaya sarapan dan makan siang yang lezat tidak harus mahal dan ribet.
+          </p>
+          <p class="text-muted mb-4">
+            Usaha UMKM ini digerakkan dengan komitmen tinggi oleh tim yang berdedikasi menjaga konsistensi rasa gurih santan, harumnya daun pandan, dan resep sambal bilis yang digodok berjam-jam:
+          </p>
+
+          <!-- The Team Behind Pak Din -->
+          <div class="mb-4">
+            <h5 class="font-heading fs-6 text-primary-pakdin mb-2">
+              <i class="bi bi-people-fill text-gold me-1"></i> Tim Pengelola Nasi Lemak Pak Din:
+            </h5>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark border p-2 px-3 fw-bold">
+                <i class="bi bi-person-check-fill text-primary-pakdin me-1"></i> Tansri
+              </span>
+              <span class="badge bg-light text-dark border p-2 px-3 fw-bold">
+                <i class="bi bi-person-check-fill text-primary-pakdin me-1"></i> Nizam
+              </span>
+              <span class="badge bg-light text-dark border p-2 px-3 fw-bold">
+                <i class="bi bi-person-check-fill text-primary-pakdin me-1"></i> Safwan
+              </span>
+              <span class="badge bg-light text-dark border p-2 px-3 fw-bold">
+                <i class="bi bi-person-check-fill text-primary-pakdin me-1"></i> Amir
+              </span>
+              <span class="badge bg-light text-dark border p-2 px-3 fw-bold">
+                <i class="bi bi-person-check-fill text-primary-pakdin me-1"></i> Haziq
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promo Banner Column (KLINK10) -->
+        <div class="col-lg-6">
+          <div class="about-banner-card">
+            <span class="promo-badge-ribbon">
+              <i class="bi bi-gift-fill"></i> Promo Spesial Komunitas
+            </span>
+            <h3 class="font-heading text-white fs-3 mb-2">Diskon 10% Karyawan & Mahasiswa K-Link Tower</h3>
+            <p class="text-white-50 small mb-0">
+              Cukup tunjukkan ID Card gedung atau masukkan kode promo di keranjang online Anda saat checkout untuk menikmati potongan langsung 10%!
+            </p>
+
+            <div class="promo-code-card">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div>
+                  <small class="text-white-50 text-uppercase d-block fw-bold" style="font-size: 0.75rem;">Kode Promo Anda:</small>
+                  <span class="promo-code-display" id="displayPromoCode">KLINK10</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <button class="btn-copy-code" id="btnCopyPromo" title="Salin kode ke papan klip">
+                    <i class="bi bi-clipboard-check"></i> Salin Kode
+                  </button>
+                  <button class="btn btn-sm btn-outline-light rounded-pill px-3 fw-bold" id="btnApplyPromoDirect">
+                    <i class="bi bi-cart-plus me-1"></i> Pakai Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="border-top border-white border-opacity-10 pt-2 mt-1">
+                <small class="text-white-50" style="font-size: 0.78rem;">
+                  <i class="bi bi-info-circle me-1"></i> Berlaku setiap hari kerja (Senin–Jumat) tanpa minimum belanja di booth Lobi K-Link Tower.
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. LOCATION & OPERATIONAL HOURS SECTION
+       ========================================================================= -->
+  <section class="location-section" id="lokasi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Temukan Kami</span>
+        <h2 class="section-title font-heading">Lokasi & Jam Operasional</h2>
+        <p class="section-desc">
+          Kunjungi booth Nasi Lemak Pak Din di Lantai L (Lobby) K-Link Tower Jakarta Selatan untuk dine-in hangat atau bungkus cepat.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Address & Details Card -->
+        <div class="col-lg-5">
+          <div class="location-info-card">
+            <div>
+              <!-- Alamat Detail -->
+              <div class="info-item-block">
+                <div class="info-item-icon">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <h4 class="info-item-title">Alamat Lengkap</h4>
+                  <p class="info-item-desc">
+                    <strong>L Floor (Lobby Utama), K-Link Tower</strong><br />
+                    Jl. Jend. Gatot Subroto Kav. 59A, RT.1/RW.3, Kuningan Timur, Kec. Setiabudi, Jakarta Selatan, DKI Jakarta 12950
+                  </p>
+                </div>
+              </div>
+
+              <!-- Jam Operasional -->
+              <div class="info-item-block">
+                <div class="info-item-icon">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <div>
+                  <h4 class="info-item-title">Jam Operasional</h4>
+                  <p class="info-item-desc mb-1">
+                    <strong>Senin – Jumat:</strong> 08.00 – 19.00 WIB
+                  </p>
+                  <span class="badge bg-danger-subtle text-danger fw-bold border border-danger-subtle">
+                    Sabtu, Minggu & Hari Libur Nasional: Tutup
+                  </span>
+                </div>
+              </div>
+
+              <!-- Kontak & Media Sosial -->
+              <div class="info-item-block">
+                <div class="info-item-icon">
+                  <i class="bi bi-instagram"></i>
+                </div>
+                <div>
+                  <h4 class="info-item-title">Instagram & Komunitas</h4>
+                  <p class="info-item-desc mb-2">
+                    Ikuti promo harian, testimoni, dan update menu di Instagram resmi kami:
+                  </p>
+                  <a 
+                    href="https://instagram.com/nasilemakpakdin" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn btn-sm btn-pakdin-outline"
+                  >
+                    <i class="bi bi-instagram me-1"></i> @nasilemakpakdin
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Maps External Link -->
+            <div class="pt-3 border-top">
+              <a 
+                href="https://maps.google.com/?q=K-Link+Tower+Jakarta" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-pakdin-primary w-100 text-center"
+              >
+                <i class="bi bi-map-fill me-1"></i> Buka Petunjuk Arah Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="col-lg-7">
+          <div class="map-container">
+            <iframe 
+              title="Peta Lokasi K-Link Tower Jakarta"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.284724021294!2d106.82914197573142!3d-6.226145360980242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3fb40e5dc15%3A0xe5fe16dbb5a93946!2sK-LINK%20TOWER!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. CART OFFCANVAS (DRAWER) & ORDER SYSTEM
+       ========================================================================= -->
+  <div 
+    class="offcanvas offcanvas-end custom-cart-offcanvas" 
+    tabindex="-1" 
+    id="cartOffcanvas" 
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header cart-offcanvas-header">
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-bag-check-fill text-gold fs-4"></i>
+        <h5 class="offcanvas-title font-heading text-white mb-0" id="cartOffcanvasLabel">
+          Keranjang Pesanan (<span class="cart-count-badge">0</span>)
+        </h5>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Tutup Keranjang"></button>
+    </div>
+
+    <div class="offcanvas-body cart-offcanvas-body">
+      <!-- Empty Cart State -->
+      <div class="cart-empty-state" id="cartEmptyState">
+        <div class="cart-empty-icon">
+          <i class="bi bi-basket3"></i>
+        </div>
+        <h5 class="font-heading mb-2">Keranjang Masih Kosong</h5>
+        <p class="text-muted small mb-4">
+          Yuk pilih Nasi Lemak gurih atau Teh Tarik segar untuk menemani harimu di K-Link Tower!
+        </p>
+        <button class="btn-pakdin-primary btn-sm" data-bs-dismiss="offcanvas">
+          <i class="bi bi-arrow-left me-1"></i> Mulai Pesan Menu
+        </button>
+      </div>
+
+      <!-- Active Cart Content Area -->
+      <div id="cartContentArea" class="d-none">
+        <!-- Cart Items List -->
+        <div class="cart-items-container" id="cartItemsList">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+
+        <!-- Promo Voucher Section -->
+        <div class="promo-voucher-box">
+          <div class="promo-label">
+            <i class="bi bi-tag-fill"></i> Kode Voucher Promo
+          </div>
+          <div class="input-group promo-input-group">
+            <input 
+              type="text" 
+              class="form-control" 
+              id="promoInput" 
+              placeholder="Contoh: KLINK10" 
+              aria-label="Kode Promo" 
+            />
+            <button class="btn btn-pakdin-gold btn-apply-promo" type="button" id="applyPromoBtn">
+              Terapkan
+            </button>
+          </div>
+          <div id="promoAlert" class="d-none"></div>
+        </div>
+
+        <!-- Form Pemesan Singkat -->
+        <div class="order-form-box">
+          <div class="order-form-title">
+            <i class="bi bi-person-lines-fill text-gold"></i>
+            <span>Data Pemesan (K-Link Tower)</span>
+          </div>
+
+          <div class="mb-2">
+            <label for="customerName" class="form-label small fw-bold mb-1">
+              Nama Lengkap <span class="text-danger">*</span>
+            </label>
+            <input 
+              type="text" 
+              class="form-control form-control-sm" 
+              id="customerName" 
+              placeholder="Contoh: Budi Santoso" 
+              required 
+            />
+            <div class="invalid-feedback small">Nama wajib diisi untuk konfirmasi order.</div>
+          </div>
+
+          <div class="mb-2">
+            <label for="customerUnit" class="form-label small fw-bold mb-1">
+              Unit / Lantai K-Link Tower <span class="text-muted fw-normal">(Opsional)</span>
+            </label>
+            <input 
+              type="text" 
+              class="form-control form-control-sm" 
+              id="customerUnit" 
+              placeholder="Contoh: Lantai 8 - PT Sinarmas / Dine-in Lobi" 
+            />
+          </div>
+
+          <div class="mb-1">
+            <label for="orderNotes" class="form-label small fw-bold mb-1">
+              Catatan Pesanan <span class="text-muted fw-normal">(Opsional)</span>
+            </label>
+            <textarea 
+              class="form-control form-control-sm" 
+              id="orderNotes" 
+              rows="2" 
+              placeholder="Contoh: Sambal dipisah, es sedikit, ayam paha atas"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Cart Summary Calculations -->
+        <div class="cart-summary-box">
+          <div class="summary-row">
+            <span>Subtotal Menu</span>
+            <span id="cartSubtotal">Rp 0</span>
+          </div>
+          <div class="summary-row discount-row d-none" id="cartDiscountRow">
+            <span>Diskon Promo (KLINK10 10%)</span>
+            <span id="cartDiscountAmount">-Rp 0</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-row total-row">
+            <span>Total Pembayaran</span>
+            <span id="cartTotal">Rp 0</span>
+          </div>
+        </div>
+
+        <!-- Main WhatsApp Checkout Button -->
+        <div class="mb-2">
+          <button type="button" class="btn-whatsapp-order" id="btnSubmitWhatsapp">
+            <i class="bi bi-whatsapp fs-5"></i>
+            <span>Pesan via WhatsApp</span>
+          </button>
+          <small class="text-muted text-center d-block mt-2" style="font-size: 0.75rem;">
+            Format pesanan akan otomatis disusun rapi dan terkirim ke WhatsApp Pak Din.
+          </small>
+        </div>
+
+        <!-- Alternative Online Ordering -->
+        <div class="alt-delivery-box">
+          <div class="alt-delivery-label">Atau order lewat aplikasi pesan antar favorit:</div>
+          <div class="alt-delivery-btns">
+            <a 
+              href="https://gofood.link/u/nasilemakpakdin" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-gofood"
+            >
+              <i class="bi bi-bag-fill"></i> Order via GoFood
+            </a>
+            <a 
+              href="https://grab.onelink.me/nasilemakpakdin" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-grabfood"
+            >
+              <i class="bi bi-bicycle"></i> Order via GrabFood
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       8. FOOTER
+       ========================================================================= -->
+  <footer class="custom-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="assets/img/logo.svg" alt="Nasi Lemak Pak Din Logo" width="40" height="40" class="rounded-circle" />
+            <span class="footer-brand-title">Nasi Lemak Pak Din</span>
+          </div>
+          <p class="footer-desc">
+            "Nasi Lemak Number 1 Jakarta" — Menyajikan nasi lemak pandan santan otentik, sambal bilis gurih mantap, dan minuman kopitiam khas Melayu di Lobi K-Link Tower.
+          </p>
+          <div class="footer-social-btns mt-3">
+            <a href="https://instagram.com/nasilemakpakdin" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://maps.google.com/?q=K-Link+Tower+Jakarta" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Google Maps">
+              <i class="bi bi-geo-alt-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Navigasi</h5>
+          <ul class="footer-links-list">
+            <li><a href="#home"><i class="bi bi-chevron-right text-gold"></i> Beranda</a></li>
+            <li><a href="#menu"><i class="bi bi-chevron-right text-gold"></i> Menu Pilihan</a></li>
+            <li><a href="#tentang"><i class="bi bi-chevron-right text-gold"></i> Tentang Kami</a></li>
+            <li><a href="#lokasi"><i class="bi bi-chevron-right text-gold"></i> Lokasi & Jam</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Quicklist -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-heading">Menu Populer</h5>
+          <ul class="footer-links-list">
+            <li><a href="#menu"><i class="bi bi-chevron-right text-gold"></i> Nasi Lemak Chicken + Egg</a></li>
+            <li><a href="#menu"><i class="bi bi-chevron-right text-gold"></i> Nasi Lemak + Egg</a></li>
+            <li><a href="#menu"><i class="bi bi-chevron-right text-gold"></i> Teh Tarik Melayu</a></li>
+            <li><a href="#menu"><i class="bi bi-chevron-right text-gold"></i> Kopi O Kopitiam</a></li>
+            <li><a href="#menu"><i class="bi bi-chevron-right text-gold"></i> Iced Sweet Tea</a></li>
+          </ul>
+        </div>
+
+        <!-- Jam & Operasional -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Jam Operasional</h5>
+          <p class="small text-white-50 mb-1">
+            <strong>Senin – Jumat:</strong><br />
+            08.00 – 19.00 WIB
+          </p>
+          <p class="small text-white-50 mb-3">
+            <strong>Sabtu, Minggu & Libur:</strong><br />
+            Tutup
+          </p>
+          <div class="p-2 bg-white bg-opacity-10 rounded">
+            <small class="text-gold fw-bold d-block"><i class="bi bi-shield-check me-1"></i> Dijamin Higienis & Halal</small>
+            <small class="text-white-50" style="font-size: 0.72rem;">Dikelola Tansri, Nizam, Safwan, Amir & Haziq</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom-border">
+        <p class="mb-0">
+          &copy; <span id="currentYear">2024</span> <strong>Nasi Lemak Pak Din</strong>. All Rights Reserved. • L Floor (Lobby) K-Link Tower, Jl. Gatot Subroto, Jakarta Selatan.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       9. FLOATING ACTION BUTTONS (MOBILE-FIRST)
+       ========================================================================= -->
+  <div class="floating-actions-container">
+    <!-- WhatsApp Floating Button -->
+    <a 
+      href="https://wa.me/6281234567890?text=Halo%20Pak%20Din,%20saya%20mau%20tanya%20menu%20dan%20pesan" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="fab-btn fab-whatsapp" 
+      aria-label="Chat WhatsApp Pak Din"
+      title="Hubungi WhatsApp Pak Din"
+    >
+      <i class="bi bi-whatsapp fs-4"></i>
+    </a>
+
+    <!-- Cart Floating Button (Opens Drawer) -->
+    <button 
+      type="button" 
+      class="fab-btn fab-cart d-lg-none" 
+      data-bs-toggle="offcanvas" 
+      data-bs-target="#cartOffcanvas" 
+      aria-controls="cartOffcanvas"
+      aria-label="Lihat Keranjang Pesanan"
+      title="Lihat Keranjang"
+    >
+      <i class="bi bi-bag-check-fill fs-4"></i>
+      <span class="fab-cart-badge cart-count-badge">0</span>
+    </button>
+  </div>
+
+  <!-- =========================================================================
+       10. TOAST NOTIFICATION CONTAINER
+       ========================================================================= -->
+  <div class="toast-container-custom" id="toastContainer" aria-live="polite"></div>
+
+  <!-- =========================================================================
+       SCRIPTS
+       ========================================================================= -->
+  <!-- Bootstrap 5 Bundle JS with Popper via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- Data Menu & Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

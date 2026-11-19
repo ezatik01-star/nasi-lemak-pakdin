@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D061"/>
+      <stop offset="50%" stop-color="#D99B26"/>
+      <stop offset="100%" stop-color="#B3740D"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#246451"/>
+      <stop offset="100%" stop-color="#143A2F"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="250" cy="250" r="235" fill="#1B4D3E" stroke="url(#goldGrad)" stroke-width="12" filter="url(#shadow)"/>
+  
+  <!-- Inner Dotted Accent Ring -->
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#FAF8F5" stroke-width="2" stroke-dasharray="6,6" opacity="0.6"/>
+  <circle cx="250" cy="250" r="205" fill="url(#greenGrad)" />
+
+  <!-- Banana Leaf Base Shape -->
+  <path d="M160 300 C180 230, 250 200, 340 220 C320 280, 270 330, 160 300 Z" fill="#2E7D32" opacity="0.9"/>
+  <path d="M170 295 Q250 240 330 225" stroke="#81C784" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Nasi Lemak Mound (Rice Pyramid) -->
+  <path d="M250 160 L315 270 C310 278, 190 278, 185 270 Z" fill="#FAF8F5" filter="url(#shadow)"/>
+  <ellipse cx="250" cy="270" rx="65" ry="14" fill="#EADCC9" opacity="0.5"/>
+
+  <!-- Hard Boiled Egg (Cut) -->
+  <ellipse cx="215" cy="265" rx="20" ry="26" fill="#FFFFFF" transform="rotate(-20 215 265)"/>
+  <circle cx="217" cy="268" r="13" fill="#FFA000"/>
+  <circle cx="219" cy="270" r="9" fill="#FFC107"/>
+
+  <!-- Sambal Splash -->
+  <path d="M270 260 C285 250, 305 265, 295 278 C285 285, 265 275, 270 260 Z" fill="#C62828"/>
+  <circle cx="280" cy="268" r="3" fill="#B71C1C"/>
+  <circle cx="290" cy="263" r="2" fill="#E53935"/>
+
+  <!-- Crispy Bilis & Peanuts -->
+  <ellipse cx="245" cy="282" rx="7" ry="3.5" fill="#8D6E63" transform="rotate(30 245 282)"/>
+  <ellipse cx="260" cy="284" rx="8" ry="4" fill="#A1887F" transform="rotate(-15 260 284)"/>
+  <ellipse cx="230" cy="280" rx="9" ry="3" fill="#D7CCC8" transform="rotate(10 230 280)"/>
+
+  <!-- Cucumber Slice -->
+  <circle cx="185" cy="270" r="16" fill="#4CAF50"/>
+  <circle cx="185" cy="270" r="12" fill="#C8E6C9"/>
+  <circle cx="185" cy="270" r="2" fill="#81C784"/>
+
+  <!-- Text Top Curved Effect / Header -->
+  <text x="250" y="105" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" fill="url(#goldGrad)" letter-spacing="4">
+    NASI LEMAK
+  </text>
+  
+  <text x="250" y="145" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="34" font-weight="900" fill="#FAF8F5" letter-spacing="2">
+    PAK DIN
+  </text>
+
+  <!-- Stars -->
+  <g fill="url(#goldGrad)">
+    <polygon points="135,115 139,127 152,127 141,135 145,147 135,139 125,147 129,135 118,127 131,127"/>
+    <polygon points="365,115 369,127 382,127 371,135 375,147 365,139 355,147 359,135 348,127 361,127"/>
+  </g>
+
+  <!-- Ribbon / Banner Bottom -->
+  <path d="M100 375 L250 360 L400 375 L380 415 L250 400 L120 415 Z" fill="#D99B26"/>
+  <text x="250" y="394" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="800" fill="#1B4D3E" letter-spacing="2.5">
+    NUMBER 1 JAKARTA
+  </text>
+
+  <!-- Location Badge -->
+  <text x="250" y="445" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#FAF8F5" opacity="0.9" letter-spacing="1">
+    LOBBY K-LINK TOWER • JAKARTA SELATAN
+  </text>
+</svg>
